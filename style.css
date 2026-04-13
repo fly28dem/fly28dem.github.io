@@ -173,3 +173,31 @@ main header {
 .video_references_list a {
     text-decoration: none;
 }
+
+.music_list {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 1000px;
+    background: linear-gradient(180deg, rgba(242, 252, 255, 1) 0%, rgb(146, 157, 182) 100%);
+}
+
+.music_list iframe {
+    height: 80vh;
+    width: 30vw;
+}
+
+.header_music {
+    background-color: aliceblue;
+}
+
+/* Стиль для планшетов и телефонов (экран меньше 768px) */
+@media screen and (max-width: 768px) {
+    .music_list { 
+        flex-direction: column;
+    }
+    .music_list iframe {
+    height: 90vh;
+    width: 90vw;
+}
+}
