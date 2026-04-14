@@ -3,107 +3,124 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
+}
+
+/* скрол бар */
+
+body::-webkit-scrollbar {
+    width: 18px;
+    background-color: rgb(192, 175, 165);
+}
+
+body::-webkit-scrollbar-thumb {
+    /* background-color: rgb(185, 158, 113); */
+    /* border-radius: 8px; */
+    /* border: 6px solid #d8ccaf; */
+    border: 3px solid #efefef;
+}
+
+/* общие стили */
+
+h1 {
+    margin: 20px 0 20px 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
+    color: rgb(253, 253, 253);
+}
+
+/* Шапка */
+
+header {
+    padding: 10px 15px;
+    background-color: rgb(220, 205, 196);
+    width: 100%;
 }
 
 nav {
-    height: 20vh;
-    background-image: url(./bread.jpeg);
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-size: 36px;
     display: flex;
+    height: 20vh;
+    margin: auto;
     justify-content: center;
     align-items: center;
-    border-radius: 14px;
-    margin: 5px 10px;
-    margin-bottom: 0;
+    border-radius: 20px;
+
+    background-image: url(./headerBackground.jpeg);
+    background-position: center;
+    background-size: 44%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
 }
 
 nav ul {
     display: flex;
-    background-color: whitesmoke;
     padding: 0;
     height: 60px;
     margin: auto;
     align-items: center;
+    background-color: rgb(238, 234, 231);
+    border: 3px solid #946243;
     border-radius: 12px;
 }
 
-nav ul li {
+nav li {
     text-decoration: none;
     list-style-type: none;
     margin: 0 40px;
+    color: #50301c;
 }
 
-nav ul li img {
+nav img {
     width: 64px;
     margin-top: 8px;
-    border: 3px solid black;
-    border-radius: 14px;
+    border: 3px solid #B39C8E;
+    border-radius: 20px;
 }
 
 main {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    margin: auto;
 }
 
-main header {
+/* Раздел с фото */
+
+.photoContainer {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
     background: #f2fcff;
-    background: linear-gradient(0deg, rgba(242, 252, 255, 1) 0%, rgb(168, 185, 187) 100%);
+    background: linear-gradient(0deg, rgb(188, 171, 161) 0%, rgb(220, 205, 196) 100%);
 }
 
-.minecraft_photo img {
+.photoContainer img {
     width: 590px;
     border-radius: 4px;
 }
 
-.minecraft_photo {
-    margin: 15px 0;
+.photoContainer div {
     display: grid;
     width: 80vw;
     gap: 5px;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-.smotrelki {
-    background: #ffffed;
-    background: linear-gradient(180deg, rgba(242, 252, 255, 1) 0%, rgb(146, 157, 182) 100%);
-    width: 100%;
-    margin: 0;
-}
+/* Раздел с видео */
 
-.smotrelki_header_container {
+.videoContainer {
     display: flex;
-    justify-content: center;
-    background-color: #e8f0ff;
-    /* background-color: red; */
-    border-radius: 100px 100px 0 0;
-    width: 250px;
-    padding: 5px 0 1px 0;
-    margin-left: 1vw;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(0deg, rgb(177, 153, 138) 0%, rgb(188, 171, 161) 100%);
+    width: 100%;
 }
 
-.smotrelki h2 {
-    font-family: "Montserrat", sans-serif;
-    font-size: 32px;
+.videoContainer ul {
+    display: flex;
+    justify-content: space-around;
+    width: 75%;
 }
 
-.video_references_list {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    place-items: center;
-    padding: 0;
-    margin: 0;
-    gap: 20px 0;
-    margin-top: 10px;
-}
-
-.video_references_list li {
+.videoContainer li {
     transition: 0.3s;
     background-color: #9966CC;
     background-size: 100%;
@@ -119,85 +136,51 @@ main header {
     padding: 5px;
 }
 
-.preview_mlp {
-    background: url(./video_preview/mlp_pr.jpg);
-}
-
-.preview_merlin {
-    background: url(./video_preview/merlin_pr.png);
-}
-
-.preview_harry {
-    background: url(./video_preview/harry_pr.png);
-}
-
-.preview_brbad {
-    background: url(./video_preview/brbad_pr.png);
-}
-
-.preview_br2_11 {
-    background: url(./video_preview/br_2_11.png);
-}
-
-.video_item {
-    position: relative;
-    
-}
-
-.video_item p {
-    color: rgb(245, 245, 245);
-    font-family: "Montserrat", sans-serif;
-    font-size: 16px;
-
-    height: 43px;
-    overflow: hidden;
-    z-index: 1;
-}
-
-.video_item .play_button {
-    position: absolute;
-    left: 251px;
-    top: 101px;
-    width: 24px;
-    height: 30px;
-    z-index: 0;
-}
-
-.video_references_list li:hover {
+.videoContainer li:hover {
     transform: scale(101%);
     cursor: pointer;
     filter: contrast(90%);
     border-radius: 3% 7% 7% 11%;
 }
 
-.video_references_list a {
+.videoContainer a {
     text-decoration: none;
 }
 
-.music_list {
+/* Раздел с музыкой */
+
+.musicContainer {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+
+    background: linear-gradient(0deg, rgb(223, 189, 153) 0%, rgb(177, 153, 138) 100%);
+}
+
+.playlistContainer {
+    display: flex;
+    gap: 10vw;
+    padding-bottom: 100px;
+}
+
+.playlistContainer h2 {
+    background: linear-gradient(0deg, rgb(176, 123, 108) 0%, rgb(219, 143, 123) 100%);
+    font-family: "Montserrat", sans-serif;
+    color: rgb(250, 250, 250);
+    padding: 10px 0 2px 10px;
+    border-radius: 12px 12px 0 0;
+    font-size: 20px;
+}
+
+.playlistItem {
+    width: 35vw;
+    height: 21vw;
+    /* overflow: hidden; */
+}
+
+.playlistItem iframe {
     width: 100%;
-    height: 1000px;
-    background: linear-gradient(180deg, rgba(242, 252, 255, 1) 0%, rgb(146, 157, 182) 100%);
-}
-
-.music_list iframe {
-    height: 80vh;
-    width: 30vw;
-}
-
-.header_music {
-    background-color: aliceblue;
-}
-
-/* Стиль для планшетов и телефонов (экран меньше 768px) */
-@media screen and (max-width: 768px) {
-    .music_list { 
-        flex-direction: column;
-    }
-    .music_list iframe {
-    height: 90vh;
-    width: 90vw;
-}
+    height: 100%;
+    border-radius: 0 0 12px 12px;
+    margin-right: -20px;
 }

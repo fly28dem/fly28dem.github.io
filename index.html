@@ -1,28 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <title>Bread Title</title>
     <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="bread.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./video_preview/preview.css">
+    
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li><img src="./sad.jpg" alt="sad"></li>
-            <li>Главная</li>
-            <li>Второстепенная</li>
-            <li>О сайте</li>
-            <li></li>
-            <li></li>
-        </ul>
-    </nav>
+    <!-- Шапка -->
+    <header class="navContainer">
+        <nav>
+            <ul>
+                <li><img src="./sad.jpg" alt="sad"></li>
+                <li>Главная</li>
+                <li>Второстепенная</li>
+                <li>О сайте</li>
+                <li></li>
+                <li></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Основной контент -->
     <main>
-        <header>
-            <div class="minecraft_photo">
+        <!-- Раздел с фото -->
+        <section class="photoContainer">
+            <h1>Фотокарточки</h1>
+            <div>
                 <img src="./minecraft_photo/1.png" alt="minecraft">
                 <img src="./minecraft_photo/2.png" alt="minecraft">
                 <img src="./minecraft_photo/3.png" alt="minecraft">
@@ -30,12 +38,11 @@
                 <img src="./minecraft_photo/5.png" alt="minecraft">
                 <img src="./minecraft_photo/6.png" alt="minecraft">
             </div>
-        </header>
-        <div class="smotrelki">
-            <div class="smotrelki_header_container">
-                <h2>Смотрелки</h2>
-            </div>
-            <ul class="video_references_list">
+        </section>
+        <!-- Раздел с видео -->
+        <section class="videoContainer">
+            <h1>Видео</h1>
+            <ul>
                 <a href="https://thedoctorteam.ru/project/mlp/season-5">
                     <li class="preview_mlp">
                         <div class="video_item">
@@ -80,24 +87,25 @@
                     </li>
                 </a>
             </ul>
-        </div>
-        <h2 class="header_music">Музыка</h2>
-        <div class="music_list">
-            <div class="playlist_block">
-                <h3>Плейлист Серёжи</h3>
-                <iframe frameborder="0" allow="clipboard-write" style="border:none;" src="https://music.yandex.ru/iframe/playlist/Coperiron/3">
-                    <!-- <a href="https://music.yandex.ru/playlists/lk.3fc26a3e-d2c5-4a27-9049-af664b82215f?utm_source=web&utm_medium=copy_link"></a>
-                    <a href="https://music.yandex.ru/users/Coperiron"></a>  -->
-                </iframe>
+        </section>
+        <!-- Раздел с музыкой -->
+         <section class="musicContainer">
+            <h1>Музыка</h1>
+            <div class="playlistContainer">
+                <!-- Мой плейлист -->
+                <div class="playlistItem">
+                    <h2>Плейлист FlyDem</h3>
+                    <iframe frameborder="0" allow="clipboard-write" src="https://music.yandex.ru/iframe/playlist/Coperiron/3"></iframe>
+                </div>
+                <!-- Плейлист Доминики -->
+                <div class="playlistItem">
+                    <h2>Плейлист Dom</h3>
+                    <iframe frameborder="0" allow="clipboard-write" src="https://music.yandex.ru/iframe/playlist/ovchinnikova.dominika/3"></iframe>
+                </div>
             </div>
-            <div>
-                <h3>Плейлист Доминики</h3>
-                <iframe frameborder="0" allow="clipboard-write" style="border:none;" src="https://music.yandex.ru/iframe/playlist/ovchinnikova.dominika/3">Слушайте 
-                    <a href="https://music.yandex.ru/playlists/lk.3440ab51-8411-4641-894d-c3e3e559e892?utm_source=web&utm_medium=copy_link">Мне нравится</a> — <a href="https://music.yandex.ru/users/ovchinnikova.dominika">Доминика Овчинникова
-                    </a> на Яндекс Музыке
-                </iframe>
-            </div>
-        </div>
+         </section>
+        
+        
     </main>
 </body>
 

@@ -1,0 +1,43 @@
+.preview_mlp {
+    background: url(./mlp_pr.jpg);
+}
+
+.preview_merlin {
+    background: url(./merlin_pr.png);
+}
+
+.preview_harry {
+    background: url(./harry_pr.png);
+}
+
+.preview_brbad {
+    background: url(./brbad_pr.png);
+}
+
+.preview_br2_11 {
+    background: url(./br_2_11.png);
+}
+
+.video_item {
+    position: relative;
+    
+}
+
+.video_item p {
+    color: rgb(245, 245, 245);
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+
+    height: 43px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.video_item .play_button {
+    position: absolute;
+    left: 251px;
+    top: 101px;
+    width: 24px;
+    height: 30px;
+    z-index: 0;
+}
