@@ -23,10 +23,14 @@ body::-webkit-scrollbar-thumb {
 /* общие стили */
 
 h1 {
-    margin: 20px 0 20px 0;
+    margin: 30px 0 15px 0;
     font-family: "Montserrat", sans-serif;
     font-size: 36px;
     color: rgb(253, 253, 253);
+}
+
+.photoContainer, .videoContainer, .musicContainer{
+    padding: 10px 0;
 }
 
 /* Шапка */
@@ -34,10 +38,9 @@ h1 {
 header {
     padding: 10px 15px;
     background-color: rgb(220, 205, 196);
-    width: 100%;
 }
 
-nav {
+header nav {
     display: flex;
     height: 20vh;
     margin: auto;
@@ -49,31 +52,30 @@ nav {
     background-position: center;
     background-size: 44%;
     font-family: "Montserrat", sans-serif;
-    font-size: 36px;
+    font-size: 32px;
 }
 
-nav ul {
+header nav ul {
     display: flex;
     padding: 0;
     height: 60px;
     margin: auto;
     align-items: center;
-    background-color: rgb(238, 234, 231);
-    border: 3px solid #946243;
+    background-color: rgb(246, 244, 242);
     border-radius: 12px;
 }
 
-nav li {
+header nav li {
     text-decoration: none;
     list-style-type: none;
     margin: 0 40px;
-    color: #50301c;
+    color: #826757;
 }
 
-nav img {
+header nav img {
     width: 64px;
     margin-top: 8px;
-    border: 3px solid #B39C8E;
+    border: 3px solid #866a5a;
     border-radius: 20px;
 }
 
@@ -183,4 +185,28 @@ main {
     height: 100%;
     border-radius: 0 0 12px 12px;
     margin-right: -20px;
+}
+
+footer {
+    padding: 5px 15px;
+    background-color: rgb(223, 189, 153);
+}
+
+footer nav {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    width: 100%;
+    height: 8vh;
+    background: #DDAA8C;
+    background: radial-gradient(circle, rgb(202, 153, 125) 20%, rgb(186, 146, 117) 100%);
+    background-size: 100%;
+    background-position: center;
+    border-radius: 12px;
+}
+
+footer span {
+    color: whitesmoke;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
 }
