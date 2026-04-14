@@ -2,18 +2,18 @@
     /* Шапка */
   header {
     padding: 5px;
+    height: 25vh;
   }
 
   header nav {
-    height: 200px;
     border-radius: 8px;
     background-size: 100%;
   }
 
   header nav ul {
-    margin-top: 7%;
     height: 100%;
     flex-direction: column;
+    justify-content: center;
     background: rgba(0, 0, 0, 0);
   }
 

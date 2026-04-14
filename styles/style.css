@@ -38,11 +38,12 @@ h1 {
 header {
     padding: 10px 15px;
     background-color: rgb(220, 205, 196);
+    height: 20vh;
 }
 
 header nav {
     display: flex;
-    height: 20vh;
+    height: 100%;
     margin: auto;
     justify-content: center;
     align-items: center;
