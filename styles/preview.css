@@ -1,21 +1,21 @@
 .preview_mlp {
-    background: url(./mlp_pr.jpg);
+    background: url(/assets/video_preview/mlp_pr.jpg);
 }
 
 .preview_merlin {
-    background: url(./merlin_pr.png);
+    background: url(/assets/video_preview/merlin_pr.png);
 }
 
 .preview_harry {
-    background: url(./harry_pr.png);
+    background: url(/assets/video_preview/harry_pr.png);
 }
 
 .preview_brbad {
-    background: url(./brbad_pr.png);
+    background: url(/assets/video_preview/brbad_pr.png);
 }
 
 .preview_br2_11 {
-    background: url(./br_2_11.png);
+    background: url(/assets/video_preview/br_2_11.png);
 }
 
 .video_item {

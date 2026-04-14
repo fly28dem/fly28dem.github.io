@@ -48,7 +48,7 @@ header nav {
     align-items: center;
     border-radius: 20px;
 
-    background-image: url(./headerBackground.jpeg);
+    background-image: url(/assets/headerBackground.jpeg);
     background-position: center;
     background-size: 44%;
     font-family: "Montserrat", sans-serif;
