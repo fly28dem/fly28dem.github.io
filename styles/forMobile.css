@@ -1,4 +1,4 @@
-@media screen and (max-width: 748px) {
+@media screen and (max-width: 750px) {
     /* Шапка */
   header {
     padding: 5px;
@@ -42,21 +42,17 @@
   /* Фото */
 
   .photoContainer img { 
-    width: 45vw;
-    object-fit: cover;
+    width: 44vw;
   }
 
   .photoContainer div {
-    width: 92vw;
-    gap: 5px;
     grid-template-columns: 1fr 1fr;
   }
 
   /* Видео */
 
   .videoContainer ul {
-    flex-direction: column;
-    align-items: center;
+    grid-template-columns: 1fr;
     width: 92vw;
   }
 
