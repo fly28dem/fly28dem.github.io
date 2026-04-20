@@ -33,6 +33,11 @@ h1 {
     padding: 10px 0;
 }
 
+a {
+    text-decoration: none;
+    color: rgb(64, 28, 11);
+}
+
 /* Шапка */
 
 header {
@@ -58,17 +63,36 @@ header nav {
 
 header nav ul {
     display: flex;
-    height: 60px;
+    height: 80px;
     align-items: center;
-    background-color: rgb(246, 244, 242);
-    border-radius: 12px;
+    gap: 30px;
+    /* border: 3px rgb(246, 244, 242) solid; */
+    /* border-radius: 16px; */
 }
 
 header nav li {
     text-decoration: none;
     list-style-type: none;
-    margin: 0 40px;
-    color: #826757;
+    padding: 12px 40px;
+    border: 3px rgb(246, 244, 242) solid;
+    border-radius: 16px;
+    transition: 0.1s;
+    background-color: rgba(1, 1, 1, );
+}
+
+header nav li:hover {
+    background-color: rgb(246, 244, 242);
+    cursor: pointer;
+    transition: 0.1s;
+    transform: scale(105%);
+}
+
+header nav li a {
+    color: rgb(246, 244, 242);
+}
+
+header nav li:hover a {
+    color: rgb(67, 28, 7);
 }
 
 header nav li:first-child {
