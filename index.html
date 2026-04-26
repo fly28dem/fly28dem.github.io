@@ -4,117 +4,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./images/favicon.png" type="image/x-icon">
     <title>Bread</title>
-    <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/preview.css">
-    <link rel="stylesheet" href="./styles/forLaptop.css">
-    <link rel="stylesheet" href="./styles/forMobile.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./preview.css">
+    <link rel="stylesheet" href="./forLaptop.css">
+    <link rel="stylesheet" href="./forMobile.css">
     
 </head>
 
 <body>
     <!-- Шапка -->
-    <header class="navContainer">
-        <nav>
-            <ul>
-                <!-- <li><img src="./assets/sad.jpg" alt="sad">Главная</li> -->
-                <li><a href="./index.html">Главная</a></li>
-                <li><a href="./minecraft.html">Майнкрафт</a></li>
-                <li><a href="./about.html">О сайте</a></li>
-            </ul>
-        </nav>
-    </header>
-    <!-- Основной контент -->
-    <main>
-        <!-- Раздел с фото -->
-        <section class="photoContainer">
-            <h1>Фотокарточки</h1>
-            <div>
-                <img src="./assets/minecraft_photo/1.png" alt="minecraft">
-                <img src="./assets/minecraft_photo/2.png" alt="minecraft">
-                <img src="./assets/minecraft_photo/3.png" alt="minecraft">
-                <img src="./assets/minecraft_photo/4.png" alt="minecraft">
-                <img src="./assets/minecraft_photo/5.png" alt="minecraft">
-                <img src="./assets/minecraft_photo/6.png" alt="minecraft">
-            </div>
-        </section>
-        <!-- Раздел с видео -->
-        <section class="videoContainer">
-            <h1>Видео</h1>
-            <ul>
-                <a href="https://thedoctorteam.ru/project/mlp/season-5">
-                    <li class="preview_mlp">
-                        <div class="video_item">
-                            <p>My Little Pony: Friendship is magic</p>
-                            <img class="play_button" src="./assets/video_preview/play_button.png" alt="play button">
-
-                        </div>
-                    </li>
-                </a>
-                <a href="https://mz.lordfilm133.ru/serialy/19820-merlin-2008.html">
-                    <li class="preview_merlin">
-                        <div class="video_item">
-                            <p>Мерлин смотреть онлайн бесплатно в хорошем HD качестве</p>
-                            <img class="play_button" src="./assets/video_preview/play_button.png" alt="play button">
-                        </div>
-                    </li>
-                </a>
-                <a href="https://garry-poter-lordfilm.ru/filosofskiy-kamen-1-2001-lord/">
-                    <li class="preview_harry">
-                        <div class="video_item">
-                            <p>Гарри Поттер и Философский Камень (2001) Смотреть Онлайн Бесплатно в Хорошем Качестве
-                                1080 HD
-                                на Русском Языке - ЛордФильм</p>
-                            <img class="play_button" src="./assets/video_preview/play_button.png" alt="play button">
-                        </div>
-                    </li>
-                </a>
-                <a href="https://www.mirabreakingbad.com/">
-                    <li class="preview_brbad">
-                        <div class="video_item">
-                            <p>Во все тяжкие</p>
-                            <img class="play_button" src="./assets/video_preview/play_button.png" alt="play button">
-                        </div>
-                    </li>
-                </a>
-                <a href="https://www.mirabreakingbad.com/episodes/br-2-season-13-seriya/">
-                    <li class="preview_br2_11">
-                        <div class="video_item">
-                            <p>Во все тяжкие последняя серия, на которой я остановился</p>
-                            <img class="play_button" src="./assets/video_preview/play_button.png" alt="play button">
-                        </div>
-                    </li>
-                </a>
-            </ul>
-        </section>
-        <!-- Раздел с музыкой -->
-        <section class="musicContainer">
-            <h1>Музыка</h1>
-            <div class="playlistContainer">
-                <!-- Мой плейлист -->
-                <div class="playlistItem">
-                    <h2>Плейлист FlyDem</h3>
-                        access denied
-                        <!-- <iframe frameborder="0" allow="clipboard-write"
-                            src="https://music.yandex.ru/iframe/playlist/Coperiron/3"></iframe> -->
-                </div>
-                <!-- Плейлист Доминики -->
-                <div class="playlistItem">
-                    <h2>Плейлист Dom</h3>
-                        access denied
-                        <!-- <iframe frameborder="0" allow="clipboard-write"
-                            src="https://music.yandex.ru/iframe/playlist/ovchinnikova.dominika/3"></iframe> -->
-                </div>
-            </div>
-        </section>
-        <footer>
+     <div class="main__container">
+        <header class="main__header">
             <nav>
-                <span>&copy;2026, Последнее обновление: 24.04.2026</span>
+                <ul class="menu__list">
+                    <li><a href="#"></a></li>
+                    <li><a href="#">Меню</a></li>
+                    <li><a href="./favorites.html">Закладки</a></li>
+                    <li><a href="./music.html">Музыка</a></li>
+                </ul>
+                <div class="logotype__container">
+                    <div class="button__container">
+                        <a href="./index.html">Bread</a>
+                    </div>
+                </div>
+                <ul class="profile__list">
+                    <li><a href="./feed.html">Лента</a></li>
+                    <li><a href="./about.html">О сайте</a></li>
+                    <li><a href="./profile.html">Профиль</a></li>
+                    <li><a href="./profile.html"></a></li>
+                </ul>
             </nav>
-        </footer>
+        </header>
+    </div>
+    <!-- Основной контент -->
+    <main class="main__container">
+        <h1>Эта страница планируется позиционироваться как главная.</h1>
+
+        <!-- Подвал -->
+        
 
     </main>
+    <footer class="main__container">
+            <nav>
+                <span>&copy;2026, Последнее обновление: 26.04.2026</span>
+            </nav>
+    </footer>
 </body>
 
 </html>
