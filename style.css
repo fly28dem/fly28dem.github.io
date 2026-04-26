@@ -58,7 +58,6 @@ li {
 .main__header {
     height: 237px;
     border-radius: 16px;
-    background: #F4DAC9;
     background: url(./images/bread__navBackground.jpg);
     background-repeat: no-repeat;
     background-position: center center;
@@ -170,6 +169,16 @@ li {
     transition: 0.3s;
 }
 
+.button__container:has(a:hover) {
+    background-image: 
+        url(./images/main_button_decoration.png), 
+        url(./images/main_button_decoration_active.png);
+    background-position: top left, bottom left;
+    background-size: 35%, 35%;
+    background-repeat: no-repeat, no-repeat;
+    transition: 0.3s ease-in-out;
+}
+
 .button__container a {
     width: 219px;
     height: 75px;
@@ -184,16 +193,6 @@ li {
     font-size: 48px;
     color: #F1EDEA;
     transition: 0.3s;
-}
-
-.button__container:has(a:hover) {
-    background-image: 
-        url(./images/main_button_decoration.png), 
-        url(./images/main_button_decoration_active.png);
-    background-position: top left, bottom left;
-    background-size: 35%, 35%;
-    background-repeat: no-repeat, no-repeat;
-    transition: 0.3s ease-in-out;
 }
 
 .button__container a:hover {
@@ -240,13 +239,6 @@ li {
     justify-content: space-around;
     justify-items: center;
     gap: 7px;
-}
-
-/* Другое отображение для ноутбучной версии */
-@media screen and (min-width: 751px) and (max-width: 1920px) {
-    .videoContainer ul {
-        grid-template-columns: repeat(4, 1fr);
-    }
 }
 
 .videoContainer li {
