@@ -18,6 +18,10 @@
     background: url(./images/video_preview/br_2_11.png);
 }
 
+.preview_911 {
+    background: url(./images/video_preview/911.jpg);
+}
+
 .video_item {
     position: relative;
     
