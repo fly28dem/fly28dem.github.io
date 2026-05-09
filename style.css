@@ -25,13 +25,17 @@ body::-webkit-scrollbar-thumb {
 
 body {
     background-color: #F4DAC9;
+    background-image: url(images/background__decoration.png);
+    background-size: 102%;
+    background-position: 62% top;
 }
 
 h1 {
     margin: 30px 0 15px 0;
     font-family: "Montserrat", sans-serif;
     font-size: 36px;
-    color: #0c926a;
+    color: #603F88;
+    font-weight: 800;
     text-align: center;
 }
 
@@ -201,6 +205,100 @@ li {
     transition: 0.3s ease-in-out;
 }
 
+/* Редирект */
+
+.landing__container {
+    position: relative;
+    background-image: url(images/main__background.png);
+    background-repeat: no-repeat;
+    background-position: 0% 42%;
+    height: 150vh;
+}
+
+.redirect  {
+    position: absolute;
+    border-radius: 100%;
+    background-repeat: no-repeat;
+}
+
+.redirect p {
+    position: absolute;
+    width: max-content;
+    height: max-content;
+    font-family: "Montserrat", sans-serif;
+    font-size: 48px;
+    color: #603F88;
+    font-weight: 800;
+}
+
+.stud-recipes {
+    width: 180px;
+    height: 180px;
+    top: 493px;
+    right: 410px;
+    background: url(images/redirect_studRecipes.png);
+}
+
+.stud-recipes:hover {
+    background: url(images/redirect_studRecipes-hover.png);
+}
+
+.stud-recipes p {
+    right: 150px;
+    bottom: -35px;
+}
+
+.boulette {
+    width: 170px;
+    height: 170px;
+    top: 558px;
+    left: 393px;
+    background: url(images/redirect_boulette.png);
+}
+
+.boulette:hover {
+    background: url(images/redirect_boulette-hover.png);
+}
+
+.boulette p {
+    bottom: -20px;
+    left: 180px;
+}
+
+.metro {
+    width: 135px;
+    height: 135px;
+    bottom: 573px;
+    right: 707px;
+    background: url(images/redirect_metro.png);
+}
+
+.metro:hover {
+    background: url(images/redirect_metro-hover.png);
+}
+
+.metro p {
+    top: -44px;
+    right: 130px;
+}
+
+.lego-star-wars {
+    width: 105px;
+    height: 105px;
+    bottom: 251px;
+    right: 1132px;
+    background: url(images/redirect_legoStarWars.png);
+}
+
+.lego-star-wars:hover {
+    background: url(images/redirect_legoStarWars-hover.png);
+}
+
+.lego-star-wars p {
+    top: 120px;
+    left: -135px;
+}
+
 /* Раздел с фото */
 
 .photoContainer {
@@ -304,7 +402,7 @@ li {
 }
 
 footer {
-    position: absolute;
+    /* position: absolute; */
     width: 98%;
     bottom: 3px;
 }
